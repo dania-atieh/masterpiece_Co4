@@ -1,0 +1,404 @@
+@import "normalize.css";
+
+* {
+  direction: rtl;
+  font-family: "Noto Naskh Arabic", serif;
+  font-size: large;
+  text-decoration: none;
+}
+
+:root {
+  --primary-color: #8dc244;
+  /* light blue */
+  --secondary-color: #f0f8ff;
+  --third-color: #fac7d4a5;
+  --white-color: white;
+}
+
+/* start of header section */
+body > header {
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: space-around;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  color: var(--white-color);
+}
+
+body > header > #header-right-section > i {
+  margin-right: 15px;
+}
+
+body > header > #header-right-section > a {
+  margin-right: 15px;
+  text-decoration: none;
+  color: var(--white-color);
+}
+
+body > header > div > a > i {
+  margin-right: 15px;
+}
+/* end of header section */
+
+/* start of nav section */
+body > nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  box-shadow: 0px 16px 17px -19px rgba(0, 0, 0, 0.45);
+  background-color: var(--white-color);
+  align-items: center;
+}
+
+/* logo */
+body > nav > a > img {
+  width: 13vh;
+  height: auto;
+}
+
+body > nav > ul > li > a {
+  text-decoration: none;
+}
+
+body > nav > ul {
+  display: flex;
+  margin-right: 2%;
+  gap: 80px;
+}
+
+body > nav > ul > li {
+  list-style-type: none;
+}
+
+/* sticky nav bar */
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
+}
+
+/* start toggle menu */
+#sidebarMenu {
+  height: 101%;
+  position: fixed;
+  left: 0px;
+  width: 109px;
+  margin-top: 93.6vh;
+  transform: translateX(-250px);
+  transition: transform 250ms ease-in-out;
+  background: var(--primary-color);
+}
+.sidebarMenuInner {
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.sidebarMenuInner > a > i {
+  margin-right: 4vh;
+}
+
+.sidebarMenuInner li {
+  list-style: none;
+  color: #fff;
+  font-weight: bold;
+  padding: 20px;
+  cursor: pointer;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.sidebarMenuInner li span {
+  display: block;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.5);
+}
+.sidebarMenuInner li a {
+  text-decoration: none !important;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+input[type="checkbox"]:checked ~ #sidebarMenu {
+  transform: translateX(0);
+  display: none;
+}
+
+input[type="checkbox"] {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  display: none;
+}
+/* three lines + x sign */
+.sidebarIconToggle {
+  display: none;
+  transition: all 0.3s;
+  box-sizing: border-box;
+  cursor: pointer;
+  position: sticky;
+  top: 2.5vh;
+  height: 3vh;
+  width: 3vh;
+  right: 36vh;
+}
+.spinner {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background-color: var(--primary-color);
+}
+.horizontal {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  position: relative;
+  float: left;
+  margin-top: 3px;
+}
+.diagonal.part-1 {
+  position: relative;
+  transition: all 0.3s;
+  box-sizing: border-box;
+  float: left;
+}
+.diagonal.part-2 {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  position: relative;
+  float: left;
+  margin-top: 3px;
+}
+input[type="checkbox"]:checked ~ .sidebarIconToggle > .horizontal {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  opacity: 0;
+}
+input[type="checkbox"]:checked ~ .sidebarIconToggle > .diagonal.part-1 {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  transform: rotate(135deg);
+  margin-top: 8px;
+  left: 9vh;
+}
+input[type="checkbox"]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  transform: rotate(-135deg);
+  margin-top: -9px;
+  left: 9vh;
+}
+/* end toggle menu */
+
+/* end of nav section  */
+
+/* start of download section */
+body > main > #download-section {
+  background-color: var(--secondary-color);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 85vh;
+}
+
+body > main > #download-section > #right-block {
+  padding-right: 15%;
+}
+
+body > main > #download-section > #left-block {
+  padding-left: 15%;
+}
+
+body > main > #download-section > #right-block > a > img {
+  width: 35%;
+}
+
+body > main > #download-section > #right-block > ul {
+  list-style-type: "✔️";
+}
+
+body > main > #download-section > #right-block > ul > li > ul {
+  list-style-type: "📄";
+}
+/* end of download section */
+
+/* start of about us section  */
+body > main > #about-us {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(0deg, rgb(0, 0, 0), rgba(0, 0, 0, 0.141)),
+    url("/images/background.png") no-repeat, url("/images/background-2.png");
+}
+
+body > main > #about-us > #container {
+  width: 40%;
+}
+
+body > main > #about-us > #container > #intro {
+  height: 62%;
+  border-radius: 10px;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
+    rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+  padding-right: 8%;
+  padding-top: 1%;
+  background-color: var(--white-color);
+  padding-left: 5%;
+}
+
+body > main > #about-us > #container > #our-goals {
+  border-radius: 10px;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
+    rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+  padding-top: 1%;
+  padding-right: 3%;
+  height: 31%;
+  background-color: var(--white-color);
+}
+/* end of about us section */
+
+/* start google maps section */
+
+body > main > #location-section > h1 {
+  text-align: center;
+}
+
+#location-section {
+  margin-bottom: -10px;
+}
+body > main > #location-section > #map-div > #map {
+  margin-bottom: 0;
+  min-width: 100%;
+  height: 71vh;
+}
+
+/* end of google maps section */
+
+/* start footer section */
+body > footer {
+  background-color: var(--primary-color);
+  text-align: center;
+  color: var(--white-color);
+  height: 5vh;
+  padding-top: 1%;
+}
+
+/* end of footer section */
+
+/* Mobile  */
+@media (max-width: 767px) {
+  * {
+    font-size: x-small;
+  }
+
+  body > header > #header-left-section {
+    display: none;
+  }
+
+  body > header {
+    justify-content: flex-start;
+  }
+
+  body > nav {
+    justify-content: space-around;
+  }
+
+  /* logo picture */
+  body > nav > a > img {
+    width: 7vh;
+  }
+
+  .sidebarIconToggle {
+    display: block;
+  }
+
+  body > main > #download-section {
+    flex-wrap: wrap;
+  }
+
+  body > main > #download-section > #right-block {
+    padding-right: 5%;
+    width: 80%;
+  }
+
+  body > main > #download-section > #left-block > img {
+    height: 30vh;
+    width: 20vh;
+  }
+
+  /* remove horizontal menu */
+  body > nav > ul {
+    display: none;
+  }
+
+  body > main > #about-us > #container > #our-goals > h1 {
+    margin-right: 2vh;
+  }
+
+  body > footer {
+    position:relative;
+    padding-top: 4%;
+    height: 3vh;
+    z-index: 100;
+  }
+
+  body > main > #about-us > #container > #intro {
+    overflow: scroll;
+  }
+
+  body > main > #about-us > #container > #our-goals {
+    overflow: scroll;
+  }
+
+  input[type="checkbox"]:checked ~ #sidebarMenu {
+    display: block;
+  }
+}
+/* end of mobile */
+
+/* tablet */
+@media (min-width: 768px) and (max-width: 991px) {
+  body > main > #download-section > #left-block > img {
+    height: 50vh;
+    width: 40vh;
+  }
+
+  * {
+    font-size: small;
+  }
+
+  body > footer {
+    padding-top: 2%;
+    height: 4vh;
+  }
+
+  /* logo picture */
+  body > nav > a > img {
+    width: 10vh;
+    margin-right: 30vh;
+  }
+
+  body > main > #about-us > #container > #intro {
+    overflow: scroll;
+  }
+}
+/* end of tablet */
+
+/* start of desktop */
+@media (min-width: 792px){
+/* logo */
+body > nav > a > img {
+  margin-right: 30vh;
+}
+}
+/* end of desktop */
