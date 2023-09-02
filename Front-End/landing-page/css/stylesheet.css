@@ -336,9 +336,15 @@ body > footer {
     width: 80%;
   }
 
+/* download buttons */
+  body > main > #download-section > #right-block > a > img {
+    width: 40%;
+  }
+
   body > main > #download-section > #left-block > img {
-    height: 30vh;
-    width: 20vh;
+    height: 29vh;
+    width: 16vh;
+    margin-right: 7vh;
   }
 
   /* remove horizontal menu */
@@ -374,13 +380,17 @@ body > footer {
 /* tablet -----------------------------------------------------------------------------------------------*/
 @media (min-width: 768px) and (max-width: 991px) {
   body > main > #download-section > #left-block > img {
-    height: 50vh;
-    width: 40vh;
+    height: 61vh;
+    width: 31vh;
   }
 
   * {
     font-size: small;
   }
+
+  body > main > #download-section > #right-block > a > img {
+    width: 23vh;
+}
 
   body > footer {
     padding-top: 2%;
