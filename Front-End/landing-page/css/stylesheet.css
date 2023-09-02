@@ -216,8 +216,13 @@ body > main > #download-section > #left-block {
   padding-left: 15%;
 }
 
+body > main > #download-section > #left-block> img {
+  padding-left: 15%;
+  height: 70vh;
+}
+
 body > main > #download-section > #right-block > a > img {
-  width: 35%;
+  width: 30vh;
 }
 
 body > main > #download-section > #right-block > ul {
@@ -295,7 +300,7 @@ body > footer {
 
 /* end of footer section */
 
-/* Mobile  */
+/* Mobile  -----------------------------------------------------------------------------------*/
 @media (max-width: 767px) {
   * {
     font-size: x-small;
@@ -366,7 +371,7 @@ body > footer {
 }
 /* end of mobile */
 
-/* tablet */
+/* tablet -----------------------------------------------------------------------------------------------*/
 @media (min-width: 768px) and (max-width: 991px) {
   body > main > #download-section > #left-block > img {
     height: 50vh;
