@@ -1,0 +1,50 @@
+[
+    {
+        "name": "دورة تعليم الرسم",
+        "coachName": "سارة علي",
+        "courseImageUrl": "https://example.com/course1-image.jpg",
+        "startDate": "1 فبراير 2024",
+        "age": "16 وما فوق",
+        "price": 25,
+        "period": "شهرياً",
+        "location": "داخل الجمعية",
+        "description": "دورة تعليم الرسم الفني بأساليب مبتكرة وممتعة. تعلم كيفية إظهار مواهبك الفنية والإبداع في عالم الرسم.",
+        "users": []
+    },
+    {
+        "name": "دورة تعليم البرمجة",
+        "coachName": "أحمد مصطفى",
+        "courseImageUrl": "https://example.com/course2-image.jpg",
+        "startDate": "15 مارس 2024",
+        "age": "18 وما فوق",
+        "price": 30,
+        "period": "شهرياً",
+        "location": "داخل الجمعية",
+        "description": "دورة تعليم برمجة الكمبيوتر بلغة البرمجة الشهيرة. ابدأ رحلتك في عالم البرمجة وتطوير البرمجيات.",
+        "users": []
+    },
+    {
+        "name": "دورة فنون الطهي",
+        "coachName": "ليلى أحمد",
+        "courseImageUrl": "https://example.com/course3-image.jpg",
+        "startDate": "10 أبريل 2024",
+        "age": "16 وما فوق",
+        "price": 20,
+        "period": "شهرياً",
+        "location": "داخل الجمعية",
+        "description": "دورة تعليم فنون الطهي العربي والعالمي. اكتشف سر ابتكار الأطباق الشهية وتعلم تقنيات الطهي الاحترافية.",
+        "users": []
+    },
+    {
+        "name": "دورة اللغة العربية",
+        "coachName": "محمد حسين",
+        "courseImageUrl": "https://example.com/course4-image.jpg",
+        "startDate": "5 مايو 2024",
+        "age": "14 وما فوق",
+        "price": 15,
+        "period": "شهرياً",
+        "location": "داخل الجمعية",
+        "description": "دورة تعليم اللغة العربية بطريقة سهلة وممتعة. ابدأ رحلتك في تعلم اللغة العربية وتطوير مهارات القراءة والكتابة.",
+        "users": []
+    }
+]
